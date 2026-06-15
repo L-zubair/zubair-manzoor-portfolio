@@ -13,7 +13,7 @@ The frontend runs at `http://localhost:5173` and the API runs at `http://localho
 
 ## Vercel contact form
 
-The deployed frontend uses `client/api/contacts.js` to deliver contact form
+The deployed frontend uses `api/contacts.js` to deliver contact form
 messages through Resend. Configure these encrypted environment variables in
 Vercel:
 
