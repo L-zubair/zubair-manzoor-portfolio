@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --color-ink: #07152f;
+  --color-blue: #0b5cff;
+  --color-blue-dark: #0646c6;
+  --color-sky: #eaf2ff;
+  --color-mist: #f5f8fd;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: #07152f;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    radial-gradient(circle at 8% 4%, rgba(11, 92, 255, 0.08), transparent 26rem),
+    #ffffff;
+}
+
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #ffffff;
+  background: #0b5cff;
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(11, 92, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 92, 255, 0.055) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(to bottom, black 20%, transparent 85%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.glass {
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 24px 80px rgba(7, 21, 47, 0.12);
+  backdrop-filter: blur(20px);
+}
+
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  box-shadow: 0 0 0 4px rgba(11, 92, 255, 0.16);
+}
