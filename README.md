@@ -11,6 +11,18 @@ A full-stack developer portfolio built with React, Vite, Tailwind CSS, Framer Mo
 
 The frontend runs at `http://localhost:5173` and the API runs at `http://localhost:5000`.
 
+## Vercel contact form
+
+The deployed frontend uses `client/api/contacts.js` to deliver contact form
+messages through Resend. Configure these encrypted environment variables in
+Vercel:
+
+- `RESEND_API_KEY`
+- `EMAIL_FROM`
+- `CONTACT_TO_EMAIL`
+
+Redeploy after changing any environment variable.
+
 ## Commands
 
 - `pnpm dev` - run client and server in development

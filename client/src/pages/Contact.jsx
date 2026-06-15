@@ -23,7 +23,14 @@ import StatsGrid from "../components/page/StatsGrid";
 import { profile } from "../data/portfolio";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 
-const initialForm = { name: "", email: "", subject: "", reason: "", message: "" };
+const initialForm = {
+  name: "",
+  email: "",
+  subject: "",
+  reason: "",
+  message: "",
+  website: ""
+};
 
 const contactStats = [
   { value: "Open to work", label: "Actively seeking opportunities", icon: BriefcaseBusiness, tone: "green" },
@@ -48,7 +55,8 @@ export default function Contact() {
       name: form.name,
       email: form.email,
       subject: form.reason ? `${form.subject} - ${form.reason}` : form.subject,
-      message: form.message
+      message: form.message,
+      website: form.website
     };
 
     try {
@@ -153,6 +161,16 @@ export default function Contact() {
 
           <InfoCard title="Send Me a Message" icon={Send}>
             <form onSubmit={submitForm}>
+              <label className="sr-only" aria-hidden="true">
+                Website
+                <input
+                  name="website"
+                  value={form.website}
+                  onChange={updateField}
+                  tabIndex="-1"
+                  autoComplete="off"
+                />
+              </label>
               <div className="grid gap-4 sm:grid-cols-2">
                 <Field label="Full Name" name="name" value={form.name} onChange={updateField} placeholder="Your full name" required />
                 <Field label="Email Address" name="email" type="email" value={form.email} onChange={updateField} placeholder="you@example.com" required />
