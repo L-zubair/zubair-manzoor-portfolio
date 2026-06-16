@@ -192,18 +192,6 @@ export const responsibilities = [
 
 export const projects = [
   {
-    id: "portfolio",
-    title: "Personal Portfolio",
-    eyebrow: "Portfolio platform",
-    description:
-      "Modern portfolio website showcasing projects, experience, technical skills, resume downloads, and contact form delivery.",
-    tags: ["React.js", "Tailwind CSS", "Vercel"],
-    image: "/images/projects/personal-portfolio.png",
-    featured: true,
-    liveUrl: "https://zubair-manzoor-portfolio.vercel.app/",
-    sourceUrl: ""
-  },
-  {
     id: "lonetree",
     title: "LoneTree",
     eyebrow: "Link-in-bio SaaS by LoneTech",
@@ -213,6 +201,18 @@ export const projects = [
     image: "/images/projects/lonetree.png",
     featured: true,
     liveUrl: "https://lonetree-client.vercel.app/",
+    sourceUrl: ""
+  },
+  {
+    id: "portfolio",
+    title: "Personal Portfolio",
+    eyebrow: "Portfolio platform",
+    description:
+      "Modern portfolio website showcasing projects, experience, technical skills, resume downloads, and contact form delivery.",
+    tags: ["React.js", "Tailwind CSS", "Vercel"],
+    image: "/images/projects/personal-portfolio.png",
+    featured: true,
+    liveUrl: "https://zubair-manzoor-portfolio.vercel.app/",
     sourceUrl: ""
   },
   {

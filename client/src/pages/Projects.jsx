@@ -66,20 +66,9 @@ export default function Projects() {
       <section className="pb-8">
         <Container>
           <SectionLabel>Featured Projects</SectionLabel>
-          <div className="mt-4 grid gap-5 lg:grid-cols-2">
-            {projects.filter((project) => project.featured).map((project) => (
-              <ProjectCard key={project.id} project={project} compact />
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section className="bg-mist py-8">
-        <Container>
-          <SectionLabel>All Projects</SectionLabel>
-          <div className="mt-4 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {projects.filter((project) => !project.featured).map((project) => (
-              <ProjectCard key={project.id} project={project} />
+          <div className="mt-4 grid gap-6 lg:grid-cols-2">
+            {projects.map((project, index) => (
+              <ProjectCard key={project.id} project={project} index={index + 1} />
             ))}
           </div>
         </Container>
