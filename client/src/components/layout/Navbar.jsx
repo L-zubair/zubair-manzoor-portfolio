@@ -14,10 +14,16 @@ export default function Navbar() {
         <Link
           to="/"
           onClick={() => setOpen(false)}
-          className="focus-ring text-3xl font-black tracking-[-0.08em] text-blue"
+          className="focus-ring grid size-12 overflow-hidden rounded-full border-2 border-blue/15 bg-sky shadow-sm transition hover:border-blue/40"
           aria-label="Zubair Manzoor home"
         >
-          ZM
+          <img
+            src={profile.profileImage}
+            alt=""
+            width="96"
+            height="96"
+            className="h-full w-full object-cover object-top"
+          />
         </Link>
 
         <nav className="hidden items-stretch self-stretch lg:flex" aria-label="Main navigation">

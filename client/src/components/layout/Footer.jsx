@@ -14,8 +14,18 @@ export default function Footer() {
     <footer className="bg-ink text-white">
       <Container className="grid gap-8 py-9 md:grid-cols-[1fr_1fr_1.1fr_1fr]">
         <div>
-          <Link to="/" className="text-3xl font-black tracking-[-0.08em] text-blue">
-            ZM
+          <Link
+            to="/"
+            className="inline-grid size-14 overflow-hidden rounded-full border-2 border-blue/30 bg-sky shadow-lg shadow-black/20"
+            aria-label="Zubair Manzoor home"
+          >
+            <img
+              src={profile.profileImage}
+              alt=""
+              width="112"
+              height="112"
+              className="h-full w-full object-cover object-top"
+            />
           </Link>
           <p className="mt-3 max-w-xs text-sm leading-6 text-slate-400">
             Building scalable digital solutions that create real impact.
