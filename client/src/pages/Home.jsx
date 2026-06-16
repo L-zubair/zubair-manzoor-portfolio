@@ -14,7 +14,7 @@ import useDocumentTitle from "../hooks/useDocumentTitle";
 export default function Home() {
   useDocumentTitle(
     "Associate Software Developer",
-    "Zubair Manzoor builds full-stack applications, APIs, dashboards, and monitoring systems."
+    "Zubair Manzoor builds frontend applications, REST API integrations, SaaS products, and monitoring-supported systems."
   );
 
   return (
@@ -38,7 +38,7 @@ export default function Home() {
         <Container className="grid gap-4 lg:grid-cols-3">
           <InfoCard title="About Me" icon={UserRound}>
             <p className="text-sm leading-6 text-slate-600">
-              Passionate developer focused on clean, efficient, user-friendly applications and reliable digital systems.
+              Frontend-focused developer and technical support professional building clean interfaces, reliable integrations, and production-ready digital systems.
             </p>
             <Button to="/about" variant="ghost" className="mt-3 min-h-8 rounded-lg px-0 text-blue">
               Read more <ArrowRight size={14} />
@@ -60,7 +60,7 @@ export default function Home() {
 
           <InfoCard title="Current Work" icon={BriefcaseBusiness}>
             <p className="text-sm leading-6 text-slate-600">
-              Working at <strong className="text-ink">Valtech</strong> as an Associate Software Developer, contributing to monitoring platforms, APIs, dashboards, and full-stack enhancements.
+              Working at <strong className="text-ink">Valtech</strong> as an Associate Software Developer, providing L2 digital support, incident analysis, monitoring, and production troubleshooting.
             </p>
             <Button to="/resume" variant="ghost" className="mt-3 min-h-8 rounded-lg px-0 text-blue">
               View experience <ArrowRight size={14} />

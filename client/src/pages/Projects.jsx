@@ -10,7 +10,7 @@ import { profile, projects } from "../data/portfolio";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const projectStats = [
-  { value: "6+", label: "Projects completed", icon: Boxes, tone: "green" },
+  { value: "5+", label: "Projects completed", icon: Boxes, tone: "green" },
   { value: "Full-Stack", label: "End-to-end solutions", icon: Code2, tone: "purple" },
   { value: "React / Node.js", label: "Core technologies", icon: Layers3, tone: "blue" },
   { value: "Live Demos", label: "Deployment focused", icon: ExternalLink, tone: "orange" }

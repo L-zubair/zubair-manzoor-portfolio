@@ -10,9 +10,9 @@ import { achievements, strengths, toolbelt } from "../data/portfolio";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const achievementStats = [
-  { value: "6+", label: "Certifications", icon: Award, tone: "blue" },
-  { value: "1+", label: "Professional award", icon: Trophy, tone: "green" },
-  { value: "4+", label: "Major milestones", icon: BarChart3, tone: "purple" },
+  { value: "2+", label: "Professional awards", icon: Award, tone: "blue" },
+  { value: "Valtech", label: "Recognition", icon: Trophy, tone: "green" },
+  { value: "5+", label: "Major projects", icon: BarChart3, tone: "purple" },
   { value: "Continuous", label: "Learning", icon: GraduationCap, tone: "orange" }
 ];
 

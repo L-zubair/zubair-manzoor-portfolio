@@ -10,6 +10,7 @@ import {
   achievements,
   education,
   experience,
+  profile,
   responsibilities,
   toolbelt
 } from "../data/portfolio";
@@ -62,7 +63,7 @@ export default function Resume() {
           <div className="space-y-4">
             <InfoCard title="Profile Summary" icon={UserRound}>
               <p className="text-sm leading-6 text-slate-600">
-                I&apos;m Zubair Manzoor, a software developer from Kashmir, currently working in Bengaluru. I specialize in full-stack applications, monitoring systems, robust APIs, and scalable digital products that solve real-world problems.
+                {profile.summary}
               </p>
             </InfoCard>
 

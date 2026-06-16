@@ -40,7 +40,7 @@ export default function About() {
       <ReferenceHero
         prefix="About"
         accent="Me"
-        description={`I'm Zubair Manzoor, an Associate Software Developer from Kashmir, currently working in Bengaluru. I specialize in full-stack applications, monitoring systems, robust APIs, and scalable digital products.`}
+        description={profile.summary}
         primary={{ label: "Contact me", to: "/contact", icon: <Send size={16} /> }}
         secondary={{ label: "View my work", to: "/projects" }}
       />
@@ -56,16 +56,16 @@ export default function About() {
           <InfoCard title="Personal Introduction" icon={UserRound}>
             <div className="space-y-3 text-sm leading-6 text-slate-600">
               <p>
-                I&apos;m passionate about turning ideas into reliable, user-friendly solutions. I enjoy working across the stack, from crafting clean frontends to building secure backends and monitoring systems.
+                I&apos;m passionate about turning ideas into reliable, user-friendly solutions. I enjoy crafting clean React frontends, integrating APIs, and supporting production systems with strong monitoring and incident-analysis practices.
               </p>
               <p>
-                I believe in clean code, continuous learning, and building digital products that create real impact.
+                I believe in clean code, continuous learning, and building digital products that create real impact for users and teams.
               </p>
             </div>
           </InfoCard>
 
           <InfoCard title="My Journey" icon={BriefcaseBusiness}>
-            <Timeline items={experience.slice(0, 3)} compact />
+            <Timeline items={experience.slice(0, 4)} compact />
           </InfoCard>
 
           <InfoCard title="Education" icon={GraduationCap}>

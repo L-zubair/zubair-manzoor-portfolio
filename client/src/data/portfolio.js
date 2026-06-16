@@ -24,8 +24,8 @@ import {
 
 export const profile = {
   name: "Zubair Manzoor",
-  role: "Associate Software Developer",
-  shortRole: "Associate",
+  role: "Associate Software Developer - Frontend Developer - Technical Support",
+  shortRole: "Associate Developer",
   resumeUrl: "/resume/Zubair-Manzoor.pdf",
   profileImage: "/images/zubair-manzoor-profile.webp",
   portraitImage: "/images/zubair-manzoor-portrait.webp",
@@ -34,7 +34,7 @@ export const profile = {
   location: "Bengaluru, India",
   hometown: "Kashmir, India",
   summary:
-    "I build modern web applications, scalable digital experiences, monitoring systems, and impactful products that solve real-world problems.",
+    "Associate Software Developer with experience in frontend development, enterprise technical support, application monitoring, and SaaS product development. Skilled in building responsive React interfaces, integrating REST APIs, and supporting production systems through monitoring and incident analysis.",
   availability: "Open to work",
   languages: ["English", "Hindi", "Urdu", "Kashmiri"],
   socials: {
@@ -56,96 +56,114 @@ export const navItems = [
 
 export const stats = [
   { value: "1+", label: "Years of experience", icon: BriefcaseBusiness, tone: "blue" },
-  { value: "6+", label: "Projects completed", icon: Boxes, tone: "green" },
-  { value: "6+", label: "Certifications", icon: Award, tone: "purple" },
-  { value: "Associate", label: "Software Developer", icon: Code2, tone: "orange" }
+  { value: "5+", label: "Projects completed", icon: Boxes, tone: "green" },
+  { value: "L2", label: "Digital support", icon: Award, tone: "purple" },
+  { value: "React", label: "Frontend focus", icon: Code2, tone: "orange" }
 ];
 
 export const skills = [
   {
-    title: "Full-Stack Development",
-    description: "Building scalable web applications using modern stacks.",
+    title: "Frontend Development",
+    description: "Building responsive interfaces with React.js, JavaScript, Tailwind CSS, Bootstrap, and Material UI.",
     icon: Layers3,
-    items: ["React", "Node.js", "JavaScript", "TypeScript"]
+    items: ["React.js", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"]
+  },
+  {
+    title: "Backend & APIs",
+    description: "Developing REST APIs and secure backend services with Node.js, Express.js, MongoDB, and JWT.",
+    icon: ServerCog,
+    items: ["Node.js", "Express.js", "REST APIs", "MongoDB", "JWT"]
   },
   {
     title: "Monitoring & Support",
-    description: "Designing and enhancing monitoring systems and dashboards.",
+    description: "Supporting production systems through Akamai, Dynatrace, Grafana, OpenSearch, MuleSoft APIs, and incident analysis.",
     icon: MonitorCog,
-    items: ["Dynatrace", "Grafana", "OpenSearch", "Production Support"]
+    items: ["Akamai", "Dynatrace", "Grafana", "OpenSearch", "MuleSoft APIs"]
   },
   {
-    title: "APIs & Integrations",
-    description: "Building robust REST APIs and third-party integrations.",
-    icon: ServerCog,
-    items: ["REST APIs", "MongoDB", "Akamai", "Data Processing"]
-  },
-  {
-    title: "Problem Solving",
-    description: "Analytical thinking and practical solutions for real products.",
+    title: "AI & Data",
+    description: "Applying Python, Pandas, data analysis, Q-Learning, and Deep Q-Network concepts to AI projects.",
     icon: BrainCircuit,
-    items: ["Python", "Algorithms", "Debugging", "Troubleshooting"]
+    items: ["Python", "Pandas", "Data Analysis", "Q-Learning", "DQN"]
   }
 ];
 
 export const toolbelt = [
-  { label: "React", icon: Code2 },
-  { label: "Node.js", icon: ServerCog },
+  { label: "React.js", icon: Code2 },
   { label: "JavaScript", icon: Code2 },
-  { label: "TypeScript", icon: Code2 },
-  { label: "Python", icon: BrainCircuit },
-  { label: "MongoDB", icon: Database },
+  { label: "HTML5", icon: Code2 },
+  { label: "CSS3", icon: Code2 },
   { label: "Tailwind CSS", icon: Layers3 },
+  { label: "Bootstrap", icon: Layers3 },
+  { label: "Material UI", icon: Layers3 },
+  { label: "Node.js", icon: ServerCog },
+  { label: "Express.js", icon: ServerCog },
   { label: "REST APIs", icon: Activity },
+  { label: "JWT Auth", icon: ShieldCheck },
+  { label: "MongoDB", icon: Database },
+  { label: "SQL", icon: Database },
+  { label: "Akamai", icon: Network },
   { label: "Dynatrace", icon: Gauge },
   { label: "Grafana", icon: MonitorCog },
   { label: "OpenSearch", icon: Network },
-  { label: "Git & GitHub", icon: GitBranch }
+  { label: "MuleSoft APIs", icon: Activity },
+  { label: "WordPress", icon: Code2 },
+  { label: "Python", icon: BrainCircuit },
+  { label: "Git & GitHub", icon: GitBranch },
+  { label: "Vercel", icon: Cloud },
+  { label: "Render", icon: Cloud }
 ];
 
 export const experience = [
   {
-    period: "2025 - Present",
-    title: "Associate Software Developer",
+    period: "Apr 2025 - Present",
+    title: "Associate Software Developer - Technical Support",
     company: "Valtech",
     description:
-      "Working on monitoring platforms, APIs, dashboards, and full-stack features that drive reliable and scalable digital products.",
-    highlights: ["React", "Node.js", "TypeScript", "REST APIs", "Dynatrace"]
+      "Provide L2 digital support for enterprise applications and production environments, monitor application performance, analyze incidents, investigate logs, and collaborate with engineering teams to maintain platform stability.",
+    highlights: ["L2 Digital Support", "Akamai", "Dynatrace", "Grafana", "OpenSearch", "MuleSoft APIs"]
   },
   {
-    period: "2024 - 2025",
-    title: "IT Support",
-    company: "Asian Computer Tech",
+    period: "Nov 2024 - Apr 2025",
+    title: "Frontend Web Developer - Apprenticeship",
+    company: "INTERNKAAR",
     description:
-      "Provided system and network support, resolved technical issues, and ensured smooth IT operations across the organization.",
-    highlights: ["Windows", "Networking", "Troubleshooting", "Active Directory"]
+      "Developed responsive web applications using React.js, integrated REST APIs with frontend applications, built reusable UI components, and improved user experience.",
+    highlights: ["React.js", "REST APIs", "Reusable Components", "Responsive UI"]
   },
   {
-    period: "2024",
-    title: "Reinforcement Learning Algorithms",
-    company: "IIT Guwahati - Internship",
+    period: "Aug 2024 - Nov 2024",
+    title: "Web Developer Intern",
+    company: "MyProBuddy",
     description:
-      "Implemented and experimented with reinforcement-learning algorithms for decision-making and optimization problems.",
-    highlights: ["Python", "RL Models", "Machine Learning", "Data Analysis"]
+      "Worked on low-code web development platforms, configured web solutions according to business requirements, and collaborated with teams to deliver quality projects.",
+    highlights: ["Low-Code Development", "Web Solutions", "Team Collaboration"]
   },
   {
-    period: "2023",
-    title: "Data Processing and API Integration",
-    company: "NIT Srinagar - Internship",
+    period: "Apr 2024 - Aug 2024",
+    title: "Web Development Intern",
+    company: "GAOTek Inc.",
     description:
-      "Processed and transformed datasets, integrated APIs, and built pipelines for real-time data workflows.",
-    highlights: ["Python", "Pandas", "REST APIs", "Data Processing"]
+      "Developed and maintained WordPress websites, updated website content, and enhanced responsiveness across pages.",
+    highlights: ["WordPress", "Responsive Design", "Content Updates"]
+  },
+  {
+    period: "Sep 2024 - Jul 2025",
+    title: "WordPress Developer",
+    company: "Tabernacle Software",
+    description:
+      "Designed and maintained responsive WordPress websites with a focus on performance, usability, and improved user experience.",
+    highlights: ["WordPress", "Performance", "User Experience"]
   }
 ];
 
 export const education = [
   {
     period: "2020 - 2024",
-    title: "B.E. in Computer Science and Engineering",
-    company: "Matrusri Engineering College, Hyderabad",
-    description:
-      "Focused on software development, data structures, database systems, networking, and modern web technologies.",
-    highlights: ["Computer Science", "Software Engineering"]
+    title: "Bachelor of Engineering in Computer Science and Engineering",
+    company: "Matrusri Engineering College, Osmania University",
+    description: "Completed engineering studies with a focus on software development, computer science fundamentals, and modern web technologies. CGPA: 6.57/10.",
+    highlights: ["Computer Science", "Software Engineering", "CGPA: 6.57/10"]
   },
   {
     period: "2020",
@@ -164,12 +182,12 @@ export const education = [
 ];
 
 export const responsibilities = [
-  "Develop and maintain full-stack web applications",
-  "Build and enhance monitoring systems and dashboards",
-  "Design, develop, and integrate RESTful APIs",
-  "Monitor system health and manage incidents",
-  "Troubleshoot issues and ensure system reliability",
-  "Collaborate with teams to deliver quality solutions"
+  "Provide L2 digital support for enterprise applications and production environments",
+  "Monitor application performance using Akamai, Dynatrace, Grafana, OpenSearch, and MuleSoft APIs",
+  "Analyze incidents, investigate logs, and collaborate with engineering teams",
+  "Build responsive frontend applications using React.js and modern UI practices",
+  "Integrate REST APIs with frontend applications",
+  "Design and maintain WordPress websites with a focus on performance and user experience"
 ];
 
 export const projects = [
@@ -181,7 +199,7 @@ export const projects = [
       "A student and job platform for Jammu and Kashmir connecting students with opportunities, resources, and career growth.",
     tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
     image: "/images/projects/jkstream.webp",
-    featured: true,
+    featured: false,
     liveUrl: "",
     sourceUrl: ""
   },
@@ -190,8 +208,8 @@ export const projects = [
     title: "LoneTree",
     eyebrow: "Link-in-bio SaaS",
     description:
-      "A link-in-bio SaaS platform to create profile pages, track clicks, and grow an online presence.",
-    tags: ["Next.js", "MongoDB", "Tailwind CSS", "Stripe"],
+      "A complete Link-in-Bio SaaS platform with authentication, analytics, QR codes, templates, and dashboard features.",
+    tags: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
     image: "/images/projects/lonetree.webp",
     featured: true,
     liveUrl: "",
@@ -199,13 +217,13 @@ export const projects = [
   },
   {
     id: "valley-cement",
-    title: "ValleyCement Website",
+    title: "Valley Cement Website",
     eyebrow: "Corporate website",
     description:
-      "Responsive corporate website for a cement company showcasing products, services, and company information.",
-    tags: ["React", "Tailwind CSS", "JavaScript"],
+      "Responsive corporate website with product, gallery, contact, and inquiry pages focused on performance, accessibility, and clean UI design.",
+    tags: ["React.js", "Tailwind CSS"],
     image: "/images/projects/valley-cement.webp",
-    featured: false,
+    featured: true,
     liveUrl: "",
     sourceUrl: ""
   },
@@ -226,8 +244,8 @@ export const projects = [
     title: "Personal Portfolio",
     eyebrow: "Portfolio platform",
     description:
-      "A developer portfolio built with React and Tailwind CSS, including smooth interactions and responsive design.",
-    tags: ["React", "Tailwind CSS", "Vercel"],
+      "Modern portfolio website showcasing projects, experience, technical skills, resume downloads, and contact form delivery.",
+    tags: ["React.js", "Tailwind CSS", "Vercel"],
     image: "/images/projects/portfolio.webp",
     featured: false,
     liveUrl: "",
@@ -238,8 +256,8 @@ export const projects = [
     title: "Snake AI",
     eyebrow: "Reinforcement learning",
     description:
-      "An AI agent trained with reinforcement learning to play Snake using a Deep Q-Network.",
-    tags: ["Python", "TensorFlow", "NumPy"],
+      "AI-powered Snake Game using Q-Learning and Deep Q-Network reinforcement learning algorithms.",
+    tags: ["Python", "Reinforcement Learning", "Q-Learning", "DQN"],
     image: "/images/projects/snake-ai.webp",
     featured: false,
     liveUrl: "",
@@ -277,9 +295,23 @@ export const achievements = [
     title: "Spark Award at Valtech",
     issuer: "Valtech",
     description:
-      "Recognized for quick learning, ownership, adaptability, and a strong contribution to professional work.",
+      "Received the Spark Award at Valtech for outstanding adaptation and contribution.",
     icon: Trophy,
     featured: true
+  },
+  {
+    year: "2025",
+    title: "JEWELS OF VALTECH Recognition",
+    issuer: "Valtech",
+    description: "Recognized under JEWELS OF VALTECH for performance and dedication.",
+    icon: Award
+  },
+  {
+    year: "2024 - 2025",
+    title: "Real-World Project Delivery",
+    issuer: "Portfolio Projects",
+    description: "Developed multiple SaaS, React.js, WordPress, and AI-based applications.",
+    icon: Code2
   },
   {
     year: "2024",
