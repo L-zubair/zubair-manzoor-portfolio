@@ -10,13 +10,13 @@ import { profile, projects } from "../data/portfolio";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const projectStats = [
-  { value: "5+", label: "Projects completed", icon: Boxes, tone: "green" },
-  { value: "Full-Stack", label: "End-to-end solutions", icon: Code2, tone: "purple" },
-  { value: "React / Node.js", label: "Core technologies", icon: Layers3, tone: "blue" },
-  { value: "Live Demos", label: "Deployment focused", icon: ExternalLink, tone: "orange" }
+  { value: "4", label: "Projects showcased", icon: Boxes, tone: "green" },
+  { value: "Live", label: "All projects linked", icon: ExternalLink, tone: "orange" },
+  { value: "React", label: "Primary stack", icon: Layers3, tone: "blue" },
+  { value: "SaaS / Web", label: "Project focus", icon: Code2, tone: "purple" }
 ];
 
-const categories = ["All", "Web Apps", "SaaS", "AI / ML", "UI / UX", "Monitoring", "React", "Node.js", "Python"];
+const categories = ["All", "Portfolio", "SaaS", "Corporate", "Music UI", "React", "JavaScript"];
 
 export default function Projects() {
   useDocumentTitle("Projects", "Full-stack, SaaS, AI, and frontend projects built by Zubair Manzoor.");

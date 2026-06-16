@@ -56,7 +56,7 @@ export const navItems = [
 
 export const stats = [
   { value: "1+", label: "Years of experience", icon: BriefcaseBusiness, tone: "blue" },
-  { value: "5+", label: "Projects completed", icon: Boxes, tone: "green" },
+  { value: "4+", label: "Projects completed", icon: Boxes, tone: "green" },
   { value: "L2", label: "Digital support", icon: Award, tone: "purple" },
   { value: "React", label: "Frontend focus", icon: Code2, tone: "orange" }
 ];
@@ -192,99 +192,51 @@ export const responsibilities = [
 
 export const projects = [
   {
-    id: "jkstream",
-    title: "JKStream",
-    eyebrow: "Student & job platform",
-    description:
-      "A student and job platform for Jammu and Kashmir connecting students with opportunities, resources, and career growth.",
-    tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-    image: "/images/projects/jkstream.webp",
-    featured: false,
-    liveUrl: "",
-    sourceUrl: ""
-  },
-  {
-    id: "lonetree",
-    title: "LoneTree",
-    eyebrow: "Link-in-bio SaaS",
-    description:
-      "A complete Link-in-Bio SaaS platform with authentication, analytics, QR codes, templates, and dashboard features.",
-    tags: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
-    image: "/images/projects/lonetree.webp",
-    featured: true,
-    liveUrl: "",
-    sourceUrl: ""
-  },
-  {
-    id: "valley-cement",
-    title: "Valley Cement Website",
-    eyebrow: "Corporate website",
-    description:
-      "Responsive corporate website with product, gallery, contact, and inquiry pages focused on performance, accessibility, and clean UI design.",
-    tags: ["React.js", "Tailwind CSS"],
-    image: "/images/projects/valley-cement.webp",
-    featured: true,
-    liveUrl: "",
-    sourceUrl: ""
-  },
-  {
-    id: "text-utility",
-    title: "Text Utility Web App",
-    eyebrow: "Web utility",
-    description:
-      "Case converter, word counter, slug generator, and more useful text tools in one focused interface.",
-    tags: ["React", "JavaScript", "Tailwind CSS"],
-    image: "/images/projects/text-utility.webp",
-    featured: false,
-    liveUrl: "",
-    sourceUrl: ""
-  },
-  {
     id: "portfolio",
     title: "Personal Portfolio",
     eyebrow: "Portfolio platform",
     description:
       "Modern portfolio website showcasing projects, experience, technical skills, resume downloads, and contact form delivery.",
     tags: ["React.js", "Tailwind CSS", "Vercel"],
-    image: "/images/projects/portfolio.webp",
-    featured: false,
-    liveUrl: "",
+    image: "/images/projects/personal-portfolio.png",
+    featured: true,
+    liveUrl: "https://zubair-manzoor-portfolio.vercel.app/",
     sourceUrl: ""
   },
   {
-    id: "snake-ai",
-    title: "Snake AI",
-    eyebrow: "Reinforcement learning",
+    id: "lonetree",
+    title: "LoneTree",
+    eyebrow: "Link-in-bio SaaS by LoneTech",
     description:
-      "AI-powered Snake Game using Q-Learning and Deep Q-Network reinforcement learning algorithms.",
-    tags: ["Python", "Reinforcement Learning", "Q-Learning", "DQN"],
-    image: "/images/projects/snake-ai.webp",
-    featured: false,
-    liveUrl: "",
+      "Premium link-in-bio platform with a polished landing page, templates, and a creator-focused profile preview.",
+    tags: ["React.js", "SaaS", "Landing Page", "Responsive UI"],
+    image: "/images/projects/lonetree.png",
+    featured: true,
+    liveUrl: "https://lonetree-client.vercel.app/",
     sourceUrl: ""
   },
   {
-    id: "streamflix",
-    title: "StreamFlix",
-    eyebrow: "Streaming experience",
+    id: "valley-cement",
+    title: "Valley Cement",
+    eyebrow: "Corporate website",
     description:
-      "Modern movie streaming web application with authentication, categories, watchlists, and a responsive UI.",
-    tags: ["React", "TMDB API", "Tailwind CSS"],
-    image: "/images/projects/streamflix.webp",
+      "Corporate website for Valley Cement with product-focused sections, gallery, contact flow, and strong visual branding.",
+    tags: ["React.js", "Corporate Website", "UI Design"],
+    image: "/images/projects/valley-cement.png",
     featured: false,
-    liveUrl: "",
+    liveUrl: "https://www.valleycements.com/",
     sourceUrl: ""
   },
   {
-    id: "admin-dashboard",
-    title: "Admin Dashboard",
-    eyebrow: "Analytics dashboard",
+    id: "spotify-clone",
+    title: "Spotify Clone",
+    eyebrow: "Music web app",
     description:
-      "Analytics dashboard with charts, user management, and real-time business metrics.",
-    tags: ["React", "Chart.js", "REST APIs"],
-    image: "/images/projects/admin-dashboard.webp",
+      "Spotify-inspired music interface with sidebar navigation, playlist sections, and a custom playback bar.",
+    tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    image: "/images/projects/spotify-clone.png",
     featured: false,
-    liveUrl: "",
+    liveUrl: "https://l-zubair.github.io/Spotify_Clone/",
     sourceUrl: ""
   }
 ];
