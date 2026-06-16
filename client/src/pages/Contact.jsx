@@ -130,8 +130,8 @@ export default function Contact() {
                 />
               </label>
               <div className="grid gap-4 md:grid-cols-2">
-                <Field label="Full Name" name="name" value={form.name} onChange={updateField} placeholder="Your full name" required />
-                <Field label="Email Address" name="email" type="email" value={form.email} onChange={updateField} placeholder="you@example.com" required />
+                <Field label="Full Name" name="name" value={form.name} onChange={updateField} placeholder="Your full name" required className="mt-0" />
+                <Field label="Email Address" name="email" type="email" value={form.email} onChange={updateField} placeholder="you@example.com" required className="mt-0" />
               </div>
               <Field label="Subject" name="subject" value={form.subject} onChange={updateField} placeholder="What is this regarding?" required />
               <label className="mt-4 block">
@@ -269,9 +269,9 @@ export default function Contact() {
   );
 }
 
-function Field({ label, ...props }) {
+function Field({ label, className = "", ...props }) {
   return (
-    <label className="mt-4 block first:mt-0">
+    <label className={`mt-4 block first:mt-0 ${className}`}>
       <span className="text-xs font-black text-ink">{label}</span>
       <input
         {...props}
