@@ -115,51 +115,9 @@ export default function Contact() {
       </section>
 
       <section className="pb-8">
-        <Container className="grid gap-5 lg:grid-cols-[.78fr_1fr_.9fr]">
-          <div className="space-y-4">
-            <InfoCard title="Contact Information" icon={Mail}>
-              <div className="divide-y divide-slate-100">
-                {contactInfo.map(({ label, value, icon: Icon, href }) => {
-                  const content = (
-                    <div className="flex gap-3 py-3 first:pt-0 last:pb-0">
-                      <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-sky text-blue">
-                        <Icon size={18} />
-                      </span>
-                      <div className="min-w-0">
-                        <p className="text-xs font-black text-ink">{label}</p>
-                        <p className="mt-0.5 break-words text-[10px] leading-4 text-slate-500">{value}</p>
-                      </div>
-                    </div>
-                  );
-                  return href ? (
-                    <a
-                      key={label}
-                      href={href}
-                      target={href.startsWith("http") ? "_blank" : undefined}
-                      rel={href.startsWith("http") ? "noreferrer" : undefined}
-                      className="block"
-                    >
-                      {content}
-                    </a>
-                  ) : (
-                    <div key={label}>{content}</div>
-                  );
-                })}
-              </div>
-            </InfoCard>
-
-            <InfoCard title="Why Reach Out?" icon={Users}>
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
-                {["Collaboration", "Project Discussion", "Technical Support", "Mentorship / Guidance"].map((item) => (
-                  <p key={item} className="rounded-lg bg-mist px-3 py-2 text-xs font-bold text-slate-600">
-                    {item}
-                  </p>
-                ))}
-              </div>
-            </InfoCard>
-          </div>
-
-          <InfoCard title="Send Me a Message" icon={Send}>
+        <Container className="space-y-5">
+          <div className="grid items-start gap-5 xl:grid-cols-[minmax(0,1.35fr)_minmax(320px,.85fr)]">
+            <InfoCard title="Send Me a Message" icon={Send} className="p-6 sm:p-7">
             <form onSubmit={submitForm}>
               <label className="sr-only" aria-hidden="true">
                 Website
@@ -171,7 +129,7 @@ export default function Contact() {
                   autoComplete="off"
                 />
               </label>
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-4 md:grid-cols-2">
                 <Field label="Full Name" name="name" value={form.name} onChange={updateField} placeholder="Your full name" required />
                 <Field label="Email Address" name="email" type="email" value={form.email} onChange={updateField} placeholder="you@example.com" required />
               </div>
@@ -197,12 +155,12 @@ export default function Contact() {
                   name="message"
                   value={form.message}
                   onChange={updateField}
-                  rows="5"
+                  rows="7"
                   minLength="20"
                   maxLength="2000"
                   placeholder="Write your message here..."
                   required
-                  className="focus-ring mt-2 w-full resize-y rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-ink placeholder:text-slate-400"
+                  className="focus-ring mt-2 min-h-44 w-full resize-y rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-ink placeholder:text-slate-400"
                 />
               </label>
               <Button type="submit" className="mt-5 min-h-11 w-full rounded-lg" disabled={status.type === "loading"}>
@@ -219,10 +177,41 @@ export default function Contact() {
                 </p>
               )}
             </form>
-          </InfoCard>
+            </InfoCard>
 
-          <div className="space-y-4">
-            <InfoCard title="Let's Connect" icon={Globe2}>
+            <div className="space-y-5">
+              <InfoCard title="Contact Information" icon={Mail} className="p-6">
+                <div className="grid gap-3">
+                  {contactInfo.map(({ label, value, icon: Icon, href }) => {
+                    const content = (
+                      <div className="flex min-w-0 gap-3 rounded-xl border border-slate-100 bg-white p-3 transition hover:border-blue/25 hover:bg-sky/40">
+                        <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-sky text-blue">
+                          <Icon size={18} />
+                        </span>
+                        <div className="min-w-0">
+                          <p className="text-xs font-black text-ink">{label}</p>
+                          <p className="mt-0.5 break-words text-[11px] leading-4 text-slate-500">{value}</p>
+                        </div>
+                      </div>
+                    );
+                    return href ? (
+                      <a
+                        key={label}
+                        href={href}
+                        target={href.startsWith("http") ? "_blank" : undefined}
+                        rel={href.startsWith("http") ? "noreferrer" : undefined}
+                        className="block"
+                      >
+                        {content}
+                      </a>
+                    ) : (
+                      <div key={label}>{content}</div>
+                    );
+                  })}
+                </div>
+              </InfoCard>
+
+              <InfoCard title="Let's Connect" icon={Globe2} className="p-6">
               <div className="grid grid-cols-2 gap-3">
                 {[
                   ["LinkedIn", "Let's connect", Linkedin, profile.socials.linkedin],
@@ -243,10 +232,23 @@ export default function Contact() {
                   </a>
                 ))}
               </div>
+              </InfoCard>
+            </div>
+          </div>
+
+          <div className="grid gap-5 lg:grid-cols-[.85fr_1.15fr]">
+            <InfoCard title="Why Reach Out?" icon={Users} className="p-6">
+              <div className="grid gap-3 sm:grid-cols-2">
+                {["Collaboration", "Project Discussion", "Technical Support", "Mentorship / Guidance"].map((item) => (
+                  <p key={item} className="rounded-xl bg-mist px-4 py-3 text-xs font-bold text-slate-600">
+                    {item}
+                  </p>
+                ))}
+              </div>
             </InfoCard>
 
-            <InfoCard title="Availability / Working With Me" icon={BriefcaseBusiness}>
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+            <InfoCard title="Availability / Working With Me" icon={BriefcaseBusiness} className="p-6">
+              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
                 {availability.map(([title, description, Icon]) => (
                   <div key={title} className="flex gap-2 rounded-xl border border-slate-100 p-3">
                     <Icon size={17} className="shrink-0 text-blue" />
