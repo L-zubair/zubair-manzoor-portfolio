@@ -33,8 +33,6 @@ export default function Projects() {
           icon: <Github size={16} />
         }}
         secondary={{ label: "Contact me", to: "/contact", icon: <Send size={16} /> }}
-        metricLabel="Projects built"
-        metricValue="6+"
       />
 
       <section className="pb-7">

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Activity, CheckCircle2, Code2 } from "lucide-react";
+import { Code2 } from "lucide-react";
 import { profile } from "../../data/portfolio";
 import Button from "../common/Button";
 import Container from "../common/Container";
@@ -10,9 +10,7 @@ export default function ReferenceHero({
   subtitle,
   description,
   primary,
-  secondary,
-  metricLabel = "System uptime",
-  metricValue = "99.9%"
+  secondary
 }) {
   return (
     <section className="relative overflow-hidden bg-white py-10 sm:py-14">
@@ -100,20 +98,6 @@ export default function ReferenceHero({
             />
           </div>
 
-          <div className="absolute right-0 top-10 w-40 rounded-xl border border-slate-200 bg-white p-4 shadow-xl">
-            <div className="flex items-center justify-between">
-              <p className="text-[10px] font-black uppercase text-slate-500">{metricLabel}</p>
-              <span className="flex items-center gap-1 text-[10px] font-bold text-emerald-600">
-                <span className="size-1.5 rounded-full bg-emerald-500" /> Live
-              </span>
-            </div>
-            <p className="mt-2 text-xl font-black text-ink">{metricValue}</p>
-            <Activity className="mt-2 w-full text-blue" size={32} />
-          </div>
-
-          <div className="absolute bottom-6 right-0 grid size-16 place-items-center rounded-xl bg-white text-blue shadow-xl">
-            <CheckCircle2 size={30} />
-          </div>
         </motion.div>
       </Container>
     </section>

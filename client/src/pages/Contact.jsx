@@ -104,8 +104,6 @@ export default function Contact() {
           href: profile.socials.linkedin,
           icon: <Linkedin size={16} />
         }}
-        metricLabel="Response time"
-        metricValue="24h"
       />
 
       <section className="pb-7">

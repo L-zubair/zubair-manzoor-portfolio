@@ -29,8 +29,6 @@ export default function Achievements() {
         description="Recognitions, certifications, and milestones that reflect my learning journey, technical growth, and professional impact."
         primary={{ label: "View certificates", to: "/achievements", icon: <Trophy size={16} /> }}
         secondary={{ label: "Contact me", to: "/contact", icon: <Send size={16} /> }}
-        metricLabel="Certificates earned"
-        metricValue="6+"
       />
 
       <section className="pb-7">
