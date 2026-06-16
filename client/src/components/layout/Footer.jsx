@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { AtSign, Facebook, Github, Instagram, Linkedin, Mail, MapPin, Twitter, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 import { navItems, profile } from "../../data/portfolio";
 import Container from "../common/Container";
@@ -6,7 +6,22 @@ import Container from "../common/Container";
 const socialLinks = [
   { label: "LinkedIn", href: profile.socials.linkedin, icon: Linkedin },
   { label: "GitHub", href: profile.socials.github, icon: Github },
+  { label: "Instagram", href: profile.socials.instagram, icon: Instagram },
+  { label: "Facebook", href: profile.socials.facebook, icon: Facebook },
+  { label: "YouTube", href: profile.socials.youtube, icon: Youtube },
+  { label: "Threads", href: profile.socials.threads, icon: AtSign },
+  { label: "X", href: profile.socials.x, icon: Twitter },
   { label: "Email", href: `mailto:${profile.email}`, icon: Mail }
+];
+
+const connectLinks = [
+  { label: "linkedin.com/in/zubair-manzoor-0a8391247", href: profile.socials.linkedin, icon: Linkedin },
+  { label: "github.com/L-zubair", href: profile.socials.github, icon: Github },
+  { label: "instagram.com/zubairmanzoor03", href: profile.socials.instagram, icon: Instagram },
+  { label: "facebook.com/lone.zubair.52012", href: profile.socials.facebook, icon: Facebook },
+  { label: "youtube.com/@LifewithZubair03", href: profile.socials.youtube, icon: Youtube },
+  { label: "threads.com/@zubairmanzoor03", href: profile.socials.threads, icon: AtSign },
+  { label: "x.com/Lonezub88347681", href: profile.socials.x, icon: Twitter }
 ];
 
 export default function Footer() {
@@ -50,22 +65,17 @@ export default function Footer() {
         <div>
           <p className="text-sm font-black">Connect</p>
           <div className="mt-3 space-y-2">
-            <a
-              href={profile.socials.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 text-xs text-slate-400 hover:text-white"
-            >
-              <Linkedin size={15} /> linkedin.com/in/zubair-manzoor-0a8391247
-            </a>
-            <a
-              href={profile.socials.github}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 text-xs text-slate-400 hover:text-white"
-            >
-              <Github size={15} /> github.com/L-zubair
-            </a>
+            {connectLinks.map(({ label, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 text-xs text-slate-400 hover:text-white"
+              >
+                <Icon size={15} /> {label}
+              </a>
+            ))}
             <a
               href={`mailto:${profile.email}`}
               className="flex items-center gap-2 text-xs text-slate-400 hover:text-white"
@@ -83,7 +93,7 @@ export default function Footer() {
           <p className="mt-3 text-xs leading-5 text-slate-400">
             Always open to discussing new projects, opportunities, and collaborations.
           </p>
-          <div className="mt-4 flex gap-2">
+          <div className="mt-4 flex flex-wrap gap-2">
             {socialLinks.map(({ label, href, icon: Icon }) => (
               <a
                 key={label}
@@ -101,7 +111,7 @@ export default function Footer() {
       </Container>
       <div className="border-t border-white/10">
         <Container className="py-4 text-center text-xs text-slate-500">
-          © {new Date().getFullYear()} Zubair Manzoor. All rights reserved.
+          &copy; {new Date().getFullYear()} Zubair Manzoor. All rights reserved.
         </Container>
       </div>
     </footer>

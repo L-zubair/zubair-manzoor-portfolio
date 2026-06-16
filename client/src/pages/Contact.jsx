@@ -1,9 +1,12 @@
 import { useState } from "react";
 import {
+  AtSign,
   BriefcaseBusiness,
   Clock3,
+  Facebook,
   Github,
   Globe2,
+  Instagram,
   Linkedin,
   Mail,
   MapPin,
@@ -11,7 +14,9 @@ import {
   Network,
   Phone,
   Send,
-  Users
+  Twitter,
+  Users,
+  Youtube
 } from "lucide-react";
 import Button from "../components/common/Button";
 import Container from "../components/common/Container";
@@ -85,6 +90,18 @@ export default function Contact() {
     { label: "GitHub", value: "github.com/L-zubair", icon: Github, href: profile.socials.github }
   ];
 
+  const socialCards = [
+    ["LinkedIn", "Professional profile", Linkedin, profile.socials.linkedin],
+    ["GitHub", "View my code", Github, profile.socials.github],
+    ["Instagram", "Follow updates", Instagram, profile.socials.instagram],
+    ["Facebook", "Connect socially", Facebook, profile.socials.facebook],
+    ["YouTube", "Life with Zubair", Youtube, profile.socials.youtube],
+    ["Threads", "@zubairmanzoor03", AtSign, profile.socials.threads],
+    ["X", "Follow on X", Twitter, profile.socials.x],
+    ["Email", "Send a message", Mail, `mailto:${profile.email}`],
+    ["Phone / WhatsApp", "Let's chat", Phone, `tel:${profile.phone.replace(/\s/g, "")}`]
+  ];
+
   const availability = [
     ["Full-time Roles", "Open to full-time opportunities", BriefcaseBusiness],
     ["Freelance Projects", "Open to selected engagements", MessageSquare],
@@ -116,65 +133,82 @@ export default function Contact() {
         <Container className="space-y-5">
           <div className="grid items-start gap-5 xl:grid-cols-[minmax(0,1.35fr)_minmax(320px,.85fr)]">
             <InfoCard title="Send Me a Message" icon={Send} className="p-6 sm:p-7">
-            <form onSubmit={submitForm}>
-              <label className="sr-only" aria-hidden="true">
-                Website
-                <input
-                  name="website"
-                  value={form.website}
-                  onChange={updateField}
-                  tabIndex="-1"
-                  autoComplete="off"
-                />
-              </label>
-              <div className="grid gap-4 md:grid-cols-2">
-                <Field label="Full Name" name="name" value={form.name} onChange={updateField} placeholder="Your full name" required className="mt-0" />
-                <Field label="Email Address" name="email" type="email" value={form.email} onChange={updateField} placeholder="you@example.com" required className="mt-0" />
-              </div>
-              <Field label="Subject" name="subject" value={form.subject} onChange={updateField} placeholder="What is this regarding?" required />
-              <label className="mt-4 block">
-                <span className="text-xs font-black text-ink">Reason for Contact</span>
-                <select
-                  name="reason"
-                  value={form.reason}
-                  onChange={updateField}
-                  className="focus-ring mt-2 min-h-11 w-full rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-600"
-                >
-                  <option value="">Select a reason</option>
-                  <option>Full-time opportunity</option>
-                  <option>Freelance project</option>
-                  <option>Collaboration</option>
-                  <option>Networking</option>
-                </select>
-              </label>
-              <label className="mt-4 block">
-                <span className="text-xs font-black text-ink">Message</span>
-                <textarea
-                  name="message"
-                  value={form.message}
-                  onChange={updateField}
-                  rows="7"
-                  minLength="20"
-                  maxLength="2000"
-                  placeholder="Write your message here..."
-                  required
-                  className="focus-ring mt-2 min-h-44 w-full resize-y rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-ink placeholder:text-slate-400"
-                />
-              </label>
-              <Button type="submit" className="mt-5 min-h-11 w-full rounded-lg" disabled={status.type === "loading"}>
-                <Send size={16} /> {status.type === "loading" ? "Sending..." : "Send message"}
-              </Button>
-              {status.message && (
-                <p
-                  role="status"
-                  className={`mt-3 text-xs font-bold ${
-                    status.type === "success" ? "text-emerald-600" : "text-red-600"
-                  }`}
-                >
-                  {status.message}
-                </p>
-              )}
-            </form>
+              <form onSubmit={submitForm}>
+                <label className="sr-only" aria-hidden="true">
+                  Website
+                  <input
+                    name="website"
+                    value={form.website}
+                    onChange={updateField}
+                    tabIndex="-1"
+                    autoComplete="off"
+                  />
+                </label>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <Field
+                    label="Full Name"
+                    name="name"
+                    value={form.name}
+                    onChange={updateField}
+                    placeholder="Your full name"
+                    required
+                    className="mt-0"
+                  />
+                  <Field
+                    label="Email Address"
+                    name="email"
+                    type="email"
+                    value={form.email}
+                    onChange={updateField}
+                    placeholder="you@example.com"
+                    required
+                    className="mt-0"
+                  />
+                </div>
+                <Field label="Subject" name="subject" value={form.subject} onChange={updateField} placeholder="What is this regarding?" required />
+                <label className="mt-4 block">
+                  <span className="text-xs font-black text-ink">Reason for Contact</span>
+                  <select
+                    name="reason"
+                    value={form.reason}
+                    onChange={updateField}
+                    className="focus-ring mt-2 min-h-11 w-full rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-600"
+                  >
+                    <option value="">Select a reason</option>
+                    <option>Full-time opportunity</option>
+                    <option>Freelance project</option>
+                    <option>Collaboration</option>
+                    <option>Networking</option>
+                  </select>
+                </label>
+                <label className="mt-4 block">
+                  <span className="text-xs font-black text-ink">Message</span>
+                  <textarea
+                    name="message"
+                    value={form.message}
+                    onChange={updateField}
+                    rows="7"
+                    minLength="20"
+                    maxLength="2000"
+                    placeholder="Write your message here..."
+                    required
+                    className="focus-ring mt-2 min-h-44 w-full resize-y rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-ink placeholder:text-slate-400"
+                  />
+                </label>
+                <Button type="submit" className="mt-5 min-h-11 w-full rounded-lg" disabled={status.type === "loading"}>
+                  <Send size={16} /> {status.type === "loading" ? "Sending..." : "Send message"}
+                </Button>
+                {status.message && (
+                  <p
+                    role="status"
+                    className={`mt-3 text-xs font-bold ${
+                      status.type === "success" ? "text-emerald-600" : "text-red-600"
+                    }`}
+                  >
+                    {status.message}
+                  </p>
+                )}
+              </form>
             </InfoCard>
 
             <div className="space-y-5">
@@ -210,26 +244,21 @@ export default function Contact() {
               </InfoCard>
 
               <InfoCard title="Let's Connect" icon={Globe2} className="p-6">
-              <div className="grid grid-cols-2 gap-3">
-                {[
-                  ["LinkedIn", "Let's connect", Linkedin, profile.socials.linkedin],
-                  ["GitHub", "View my code", Github, profile.socials.github],
-                  ["Email", "Send a message", Mail, `mailto:${profile.email}`],
-                  ["Phone / WhatsApp", "Let's chat", Phone, `tel:${profile.phone.replace(/\s/g, "")}`]
-                ].map(([label, description, Icon, href]) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target={String(href).startsWith("http") ? "_blank" : undefined}
-                    rel={String(href).startsWith("http") ? "noreferrer" : undefined}
-                    className="rounded-xl border border-slate-200 p-4 text-center transition hover:border-blue hover:bg-sky"
-                  >
-                    <Icon className="mx-auto text-blue" size={23} />
-                    <p className="mt-2 text-xs font-black text-ink">{label}</p>
-                    <p className="mt-1 text-[10px] text-slate-500">{description}</p>
-                  </a>
-                ))}
-              </div>
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-2">
+                  {socialCards.map(([label, description, Icon, href]) => (
+                    <a
+                      key={label}
+                      href={href}
+                      target={String(href).startsWith("http") ? "_blank" : undefined}
+                      rel={String(href).startsWith("http") ? "noreferrer" : undefined}
+                      className="rounded-xl border border-slate-200 p-4 text-center transition hover:border-blue hover:bg-sky"
+                    >
+                      <Icon className="mx-auto text-blue" size={23} />
+                      <p className="mt-2 text-xs font-black text-ink">{label}</p>
+                      <p className="mt-1 text-[10px] text-slate-500">{description}</p>
+                    </a>
+                  ))}
+                </div>
               </InfoCard>
             </div>
           </div>

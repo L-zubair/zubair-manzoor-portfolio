@@ -40,8 +40,12 @@ export const profile = {
   socials: {
     github: "https://github.com/L-zubair",
     linkedin: "https://www.linkedin.com/in/zubair-manzoor-0a8391247/",
-    instagram: "",
-    twitter: ""
+    instagram: "https://www.instagram.com/zubairmanzoor03/",
+    facebook: "https://www.facebook.com/lone.zubair.52012/",
+    youtube: "https://www.youtube.com/@LifewithZubair03",
+    threads: "https://www.threads.com/@zubairmanzoor03",
+    x: "https://x.com/Lonezub88347681",
+    twitter: "https://x.com/Lonezub88347681"
   }
 };
 
