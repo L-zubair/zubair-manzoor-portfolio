@@ -146,6 +146,20 @@ export const education = [
     description:
       "Focused on software development, data structures, database systems, networking, and modern web technologies.",
     highlights: ["Computer Science", "Software Engineering"]
+  },
+  {
+    period: "2020",
+    title: "Class 12",
+    company: "Govt. Boys Higher Secondary Pampore",
+    description: "Completed Class 12 under the Jammu and Kashmir Board of School Education.",
+    highlights: ["JKBOSE"]
+  },
+  {
+    period: "2018",
+    title: "Class 10",
+    company: "Government High School Zainatrag",
+    description: "Completed Class 10 under the Jammu and Kashmir Board of School Education.",
+    highlights: ["JKBOSE"]
   }
 ];
 

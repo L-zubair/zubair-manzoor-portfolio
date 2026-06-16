@@ -42,11 +42,7 @@ export default function Resume() {
 
           <div className="space-y-4">
             <InfoCard title="Education" icon={GraduationCap}>
-              <h3 className="text-sm font-black text-ink">{education[0].title}</h3>
-              <p className="mt-2 text-xs leading-5 text-slate-600">{education[0].company}</p>
-              <span className="mt-3 inline-flex rounded-md bg-mist px-2 py-1 text-[10px] font-bold text-slate-500">
-                {education[0].period}
-              </span>
+              <Timeline items={education} compact />
             </InfoCard>
 
             <InfoCard title="Key Skills" icon={Star}>
