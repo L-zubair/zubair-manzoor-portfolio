@@ -81,6 +81,14 @@ export default function Navbar() {
                   {item.label}
                 </NavLink>
               ))}
+              <a
+                href={profile.resumeUrl}
+                download="Zubair-Manzoor.pdf"
+                onClick={() => setOpen(false)}
+                className="rounded-xl bg-blue px-4 py-3 text-sm font-bold text-white"
+              >
+                Download Resume
+              </a>
             </Container>
           </motion.nav>
         )}
