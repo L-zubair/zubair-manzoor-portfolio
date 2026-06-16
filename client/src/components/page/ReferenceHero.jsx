@@ -36,8 +36,9 @@ export default function ReferenceHero({
               <Button
                 to={primary.to}
                 href={primary.href}
-                target={primary.href ? "_blank" : undefined}
-                rel={primary.href ? "noreferrer" : undefined}
+                download={primary.download}
+                target={primary.target ?? (primary.href && !primary.download ? "_blank" : undefined)}
+                rel={primary.rel ?? (primary.href && !primary.download ? "noreferrer" : undefined)}
                 className="min-h-11 rounded-lg px-5"
               >
                 {primary.icon}
@@ -48,8 +49,9 @@ export default function ReferenceHero({
               <Button
                 to={secondary.to}
                 href={secondary.href}
-                target={secondary.href ? "_blank" : undefined}
-                rel={secondary.href ? "noreferrer" : undefined}
+                download={secondary.download}
+                target={secondary.target ?? (secondary.href && !secondary.download ? "_blank" : undefined)}
+                rel={secondary.rel ?? (secondary.href && !secondary.download ? "noreferrer" : undefined)}
                 variant="secondary"
                 className="min-h-11 rounded-lg px-5"
               >

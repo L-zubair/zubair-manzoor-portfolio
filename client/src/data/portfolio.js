@@ -26,6 +26,7 @@ export const profile = {
   name: "Zubair Manzoor",
   role: "Associate Software Developer",
   shortRole: "Associate",
+  resumeUrl: "/resume/Zubair-Manzoor.pdf",
   profileImage: "/images/zubair-manzoor-profile.webp",
   portraitImage: "/images/zubair-manzoor-portrait.webp",
   email: "zubairmanzoor5578@gmail.com",

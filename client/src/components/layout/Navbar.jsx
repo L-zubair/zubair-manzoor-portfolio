@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Download, Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { navItems } from "../../data/portfolio";
+import { navItems, profile } from "../../data/portfolio";
 import Container from "../common/Container";
 
 export default function Navbar() {
@@ -38,13 +38,14 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <Link
-          to="/resume"
+        <a
+          href={profile.resumeUrl}
+          download="Zubair-Manzoor.pdf"
           className="focus-ring hidden min-h-10 items-center gap-2 rounded-lg bg-blue px-5 text-sm font-bold text-white shadow-lg shadow-blue/20 transition hover:bg-blue-dark lg:inline-flex"
         >
           <Download size={16} />
           View Resume
-        </Link>
+        </a>
 
         <button
           type="button"

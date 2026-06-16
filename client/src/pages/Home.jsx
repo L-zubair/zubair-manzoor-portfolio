@@ -24,7 +24,7 @@ export default function Home() {
         accent="Manzoor"
         subtitle={profile.role}
         description={profile.summary}
-        primary={{ label: "View resume", to: "/resume" }}
+        primary={{ label: "View resume", href: profile.resumeUrl, download: "Zubair-Manzoor.pdf" }}
         secondary={{ label: "View projects", to: "/projects", icon: <FolderKanban size={16} /> }}
       />
 
