@@ -69,18 +69,7 @@ export default function About() {
           </InfoCard>
 
           <InfoCard title="Education" icon={GraduationCap}>
-            <div className="flex gap-4">
-              <span className="grid size-14 shrink-0 place-items-center rounded-full bg-sky text-blue">
-                <GraduationCap size={27} />
-              </span>
-              <div>
-                <h3 className="text-sm font-black text-ink">{education[0].title}</h3>
-                <p className="mt-2 text-xs leading-5 text-slate-600">{education[0].company}</p>
-                <span className="mt-3 inline-flex rounded-md bg-mist px-2 py-1 text-[10px] font-bold text-slate-500">
-                  {education[0].period}
-                </span>
-              </div>
-            </div>
+            <Timeline items={education} compact />
           </InfoCard>
         </Container>
       </section>
