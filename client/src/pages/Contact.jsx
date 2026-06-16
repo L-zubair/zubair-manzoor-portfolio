@@ -267,9 +267,9 @@ export default function Contact() {
   );
 }
 
-function Field({ label, className = "", ...props }) {
+function Field({ label, className = "mt-4", ...props }) {
   return (
-    <label className={`mt-4 block first:mt-0 ${className}`}>
+    <label className={`block ${className}`}>
       <span className="text-xs font-black text-ink">{label}</span>
       <input
         {...props}
