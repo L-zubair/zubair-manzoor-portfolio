@@ -1,5 +1,5 @@
 import { Rocket, Send } from "lucide-react";
-import Button from "../common/Button";
+import { Link } from "react-router-dom";
 import Container from "../common/Container";
 
 export default function CTASection({
@@ -20,12 +20,12 @@ export default function CTASection({
               <p className="mt-1 text-sm text-blue-100">{description}</p>
             </div>
           </div>
-          <Button
+          <Link
             to="/contact"
-            className="relative mt-5 min-h-10 rounded-lg bg-white px-6 text-blue shadow-none hover:bg-sky sm:mt-0"
+            className="focus-ring relative mt-5 inline-flex min-h-10 items-center justify-center gap-2 rounded-lg bg-white px-6 text-sm font-black text-blue shadow-lg shadow-blue-dark/20 transition hover:bg-blue-50 hover:text-blue-dark sm:mt-0"
           >
             <Send size={16} /> Get in touch
-          </Button>
+          </Link>
         </div>
       </Container>
     </section>
